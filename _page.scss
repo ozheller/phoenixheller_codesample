@@ -1,0 +1,96 @@
+/**
+ * @file
+ * SMACSS page
+ *
+ * Adds styles on pages.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+// General page level settings.
+body{
+  background-color: gray;
+}
+
+b,
+strong {
+  font-weight: normal;
+  font-family: $avenir-black;
+}
+
+#page{
+  background-color: white;
+}
+
+.page__title{
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+#main{
+  padding-top: 0px;
+}
+
+#navigation{
+  display: none;
+}
+
+.sidebar-second .region-sidebar-second {
+  margin: 0px;
+  width: 17em;
+  float: right;
+  position: relative;
+}
+
+
+
+// Page Heading configuration:
+//
+#header{
+  padding-right:0;
+ // height: 0;
+
+}
+
+#plogo {
+  float: left;
+  background-image: url('../images/header_no_tagline.png');
+  width: 455px;
+  height: 220px;
+  padding: 0;
+  margin: 0;
+}
+
+#logo_text {
+  text-decoration: none;
+  color: #000000;
+    p{
+      width: 285px;
+      padding: 0;
+      margin: 0;
+      line-height: 14px;
+      font-size: 12px;
+      position:relative;
+      left:194px;
+      top:-80px;
+      height:0;
+    }
+}
+
+@media all and (min-width: 768px) {
+  //The black triangle configuration
+  #tri {
+    background-image: url('../images/black_triangle.png');
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 310px;
+  }
+}
+
+//For Page Footer Configuratation See navigation
+
+//Who's Phoenix image settings
+.node-22 .field-item img{margin: 0.35em 1em 0em 0em;}

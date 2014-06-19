@@ -1,0 +1,111 @@
+/**
+ * @file
+ * SMACSS page
+ *
+ * Adds styles on Before and After View.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+//This is for the Before and After view.
+.view-content .field-item img{
+  border: 1px solid;
+}
+
+.node__title{
+  display: none;
+}
+
+
+
+
+@media all and (min-width: 1177px) {
+  //Before Image View
+  .field-name-field-before-image{
+    float: left;
+    margin-left: 22px;
+
+     .field-label{
+      text-align: right;
+      font-family: $avenir-black;
+      font-weight: normal;
+    }
+  }
+
+  //After Image View
+  .field-name-field-after-image{
+    float: right;
+    margin-left: 0px;
+    margin-right: 22px;
+
+      .field-label{
+      text-align: left;
+      font-family: $avenir-black;
+      font-weight: normal;
+    }
+  }
+
+//Before and After Text handeling
+  .view-before-and-after{
+    margin-left:0;
+      .view-header, .field-name-body{
+        margin-left:11.5em;
+        width: 60%;
+      }
+  }
+
+}
+
+// This is to format the pager on the Portfolio page:
+
+//This is for the Portfolio Page
+/*@media all and (min-width: 959px) {
+  .view-portfolio .views-slideshow-controls-top{
+    float: left;
+    left: -157px;
+    position: relative;
+    width: 90px
+  }
+}*/
+
+
+//These are for the Portfolio Blocks.
+@media all and (min-width: 959px) {
+  .view-display-id-block_1 #widget_pager_top_porfolio_slideshow-block_1{
+    float: left;
+    left: -157px;
+    position: relative;
+    width: 90px
+  }
+
+  .view-display-id-block_1 .clearfix:after {
+    clear: none;
+  }
+  .view-display-id-block_2{
+    display:none;
+  }
+}
+
+@media all and (max-width: 958px){
+  .view-display-id-block_1{
+    display: none;
+  }
+}
+
+//This is for the Northside Freelancer RSS Feed View
+
+#block-views-nsfg-block .views-field-title{
+  width: 25%;
+  border-right: 1px solid;
+  border-color: #ffffff;
+  text-align: center;
+}
+
+#block-views-nsfg-block tbody .views-field-field-event-description {
+  padding: 1.5em 1em;
+  }
+
+#block-views-nsfg-block tr.even {
+  background-color: #CECECE;
+}

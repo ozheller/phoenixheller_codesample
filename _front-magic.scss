@@ -1,0 +1,110 @@
+/**
+ * @file
+ * SMACSS Front Page Magic
+ *
+ * Adds CSS to be used on the Front page and javascript.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+//Front Page Title
+.front .page__title{
+  display: none;
+}
+
+// Sprite configuration
+  #who, #what, #when, #where, #how, #why {
+    background-image: url("../images/question_words.png");
+    display: block;
+    width: 263px;
+    height: 55px;
+    text-indent: -9999px;
+  }
+
+// Header configuration
+  #accordion h3{
+    font-family: $avenir-black;
+    font-weight: normal;
+    position: relative;
+    bottom: 5em;
+    line-height: 1em;
+    width: 16.25em;
+    }
+
+  .ui-accordion-header{
+    outline:none;
+    height: 4.5em;
+    margin-bottom: 1em;
+  }
+
+
+//Sprite location and change with js
+  #who{
+    background-position: 0px -9px;
+  }
+  .ui-state-active #who, #who:hover{
+    background-position: -265px -10px;
+    cursor:pointer;
+  }
+
+  #what{
+    background-position: 0px -64px;
+  }
+  .ui-state-active #what, #what:hover{
+    background-position: -265px -65px;
+    cursor:pointer;
+  }
+
+  #when{
+    background-position: 0px -118px;
+  }
+  .ui-state-active #when, #when:hover{
+    background-position:-265px -118px;
+    cursor:pointer;
+  }
+
+  #where{
+    background-position: 0px -172px;
+  }
+  .ui-state-active #where, #where:hover{
+    background-position: -265px -172px;
+    cursor:pointer;
+  }
+
+  #how{
+    background-position: 0px -227px;
+  }
+  .ui-state-active #how, #how:hover{
+    background-position: -265px -226px;
+    cursor:pointer;
+  }
+
+  #why{
+    background-position: 0px -282px;
+  }
+  .ui-state-active #why, #why:hover{
+    background-position: -265px -281px;
+    cursor:pointer;
+  }
+
+//Additional Accordionn configuration
+//Text
+  #accordion ul, #accordion p{
+    margin: 0;
+  }
+
+  .ui-accordion-content{
+    margin-bottom: 3em;
+  }
+//Images
+  .front #accordion img{
+    max-width: 263px;
+  }
+
+//Links
+  #ui-accordion-accordion-panel-4 a:link, #ui-accordion-accordion-panel-4 a:visited{
+    font-size: 1.5em;
+    color: #FCB643;
+  }
+

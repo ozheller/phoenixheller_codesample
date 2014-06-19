@@ -1,0 +1,91 @@
+/**
+ * @file
+ * SMACSS menu
+ *
+ * Adds styles to navigation menus.
+ *
+ * Additional useful selectors can be found in Zen's online documentation.
+ * https://drupal.org/node/1707736
+ */
+
+
+
+//Header Menu Block configuration
+#block-menu-menu-header-menu {
+  float: right;
+
+  .content {
+    font-family: $avenir-black;
+  }
+  .block__title{
+    display: none;
+  }
+
+
+     .menu__item{
+        list-style-image: none;
+        list-style-type: none;
+        text-transform: uppercase;
+      }
+        .content ul a {
+          text-decoration: none;
+          color: #000000;
+          background-color: $yellow;
+          margin-bottom: 1em;
+          padding: 0.25em 6em 0.25em 0.5em;
+        }
+}
+
+//Side Bar Menu Block Configuration
+//
+
+#block-menu-menu-sidebar-menu .content{
+  padding: 0px;
+  margin: 0px;
+  font-family: $avenir-black;
+  .block__title{
+    display: none;
+  }
+  .menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+  .menu__item {
+    list-style-image: none;
+    list-style-type: none;
+    text-transform: capitalize;
+    }
+
+    ul a{
+          text-decoration: none;
+          color: #000000;
+          background-color: $yellow;
+          margin-bottom: 1em;
+          padding: 2.25em 0em 2.25em 0.5em;
+          display:block;
+    }
+  }
+
+
+
+// Footer Menu Configuration
+#block-menu-menu-footer-menu {
+  text-align: center;
+
+  .menu {
+    padding: 25px 0px 0px 0px;
+  }
+
+  .menu__item{
+  padding: 0 1em;
+  font-family: $avenir-black;
+  display: inline;
+  border-right: 2px solid;
+}
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+      .last {border-right: 0 none;}
+}

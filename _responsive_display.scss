@@ -1,0 +1,159 @@
+/**
+ * @file
+ * Positioning for overwriting the responsive layout.
+ *
+ * Define CSS classes to create a fluid grid layout with optional sidebars
+ * depending on whether blocks are placed in the left or right sidebars.
+ *
+ */
+@media all and (max-width: 479px){
+  body {
+    width:479px;
+  }
+
+  #header {
+    padding-left: 0px;
+    margin-left:-15px;
+    margin-bottom: -130px;
+  }
+
+  #block-menu-menu-header-menu{
+    width:100%;
+    text-align: center;
+      .menu .menu__item{
+    display: inline;
+        a{
+          padding: 0.25em 2em;
+        }
+      }
+  }
+
+  #main{
+    margin-top:100px;
+  }
+
+  .sidebar-second #content{
+    margin-left: 12px;
+    margin-right: 0;
+    width: 96%;
+  }
+
+  .sidebar-second .region-sidebar-second {
+    display: none;
+  }
+
+
+  .view-before-and-after {
+    margin-left:12px;
+  }
+}
+
+@media all and (min-width: 480px){
+
+  #header {
+    padding-left: 0px;
+    margin-left:-15px;
+    margin-bottom: -130px;
+  }
+
+  #block-menu-menu-header-menu{
+    width:100%;
+    text-align: center;
+      .menu .menu__item{
+    display: inline;
+        a{
+          display: inline;
+          padding: 0.25em 2em;
+        }
+      }
+  }
+
+  #main{
+    margin-top:100px;
+  }
+
+  .sidebar-second #content{
+    margin-left: 12px;
+    margin-right: 0;
+    width: 96%;
+  }
+
+  .sidebar-second .region-sidebar-second {
+    display: none;
+  }
+
+  .view-before-and-after {
+    margin-left:12px;
+  }
+
+}
+
+
+@media all and (min-width: 768px) {
+  #block-menu-menu-header-menu{
+    margin-top:-6em;
+  }
+}
+
+@media all and (min-width: 960px) {
+
+  #main{
+    margin-top: 4em;
+  }
+
+  #header{
+    margin-left:0em;
+    padding:0em;
+  }
+
+  #block-menu-menu-header-menu{
+    margin-top: -19.5em;
+    text-align: left;
+    position: relative;
+    width: 182px;
+    right:6.25em;
+
+      .menu {
+        margin: 1.5em 0em 0em 0em;
+        padding: 0px
+      }
+
+      .menu__item{
+        display: block;
+      }
+  }
+
+ #block-menu-menu-header-menu .menu .menu__item a {
+    display: block;
+    padding: 0.25em 0.75em 0.25em 0.5em;
+
+  }
+
+  .sidebar-second .region-sidebar-second {
+    display:block;
+    right:1.25em;
+    bottom:3em;
+  }
+
+  .sidebar-second #content{
+    margin-left: 11.5em;
+    width:50%;
+    position: relative;
+    bottom: 4em;
+  }
+
+  .view-before-and-after{
+    margin-left: 11.5em;
+      .view-header, .field-name-body{
+        width: 547px
+      }
+  }
+
+}
+
+@media all and (min-width: 1127px) {
+  .sidebar-second #content{
+    width: 55%;
+  }
+}
+
